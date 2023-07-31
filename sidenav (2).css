@@ -1,0 +1,51 @@
+.sidenav{
+ text-align: right;
+ width: 0;
+ height: 100%;
+ position: fixed;
+ z-index: 1;
+ top: 0;
+ right: 0;
+ background-color: /*rgba(20, 20, 40, 0.9)*/ ;
+ transition: all 0.3s;
+ padding-top: 20px;
+}
+
+.sidenav a{
+ font-size: 1.2rem;
+ padding: 8px 8px 8px 30px;
+ display: block;
+ color: snow;
+ text-decoration: none;
+ font-weight: 550;
+ transition: all 0.5s;
+}
+
+.sidenav a:hover {
+  color: ghostwhite;
+}
+
+header{
+ display: flex;
+ justify-content: space-between;
+}
+
+.headnav{
+ display: flex;
+ justify-content: space-between;
+}
+
+.headnav h3{
+ font-size: 1.5rem;
+ color: white;
+ position: sticky;
+ top: 0;
+ left: 90%;
+ right: 20px;
+ }
+ 
+ .closebtn{
+  font-size: 3rem;
+  position: absolute;
+  margin-left: 3px;
+ }

@@ -1,0 +1,190 @@
+<html>
+
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <title>Conversion project</title>
+ <script src="https://cdn.tailwindcss.com"></script>
+ <link rel="stylesheet" href="style.css">
+</head>
+
+<body class="tracking-wide">
+ 
+ <header>
+   <h3>Codify</h3>
+
+ </header>
+
+<main>
+ <section>
+ <div class="headnav">
+<!-- <h2>My conversion project<br>(JavaScript 🙂)</h2>-->
+   <h3 onclick="openNav()">&#9776;</h3>
+    <div class="sidenav" id="sidenav">
+     <a href="javascript:void(0)" onclick="closeNav()" class="closebtn">
+      &times;</a>
+      <a href="https://linktr.ee/chibuzokelechivp?utm_source=linktree_profile_share&ltsid=a33cf3b3-9b91-47bc-bfcb-3c01423022f0">My Linktree</a>
+     <a href="https://www.google.com">Google</a>
+     <a href="https://www.android.com/android-13/">Android 13</a>
+     <a href="https://workspace.google.com/">Google apps</a>
+     <a href="https://blogs.windows.com/windowsexperience/2021/06/24/introducing-windows-11/">Windows 11</a>
+     <a href="https://learnjavascript.info">About JavaScript</a>
+     <a href="https://nextjs.org">NextJs</a>
+     <a href="https://react.dev">React</a>
+     <a href="https://flutter.dev/?gclid=EAIaIQobChMI9-uXysqn_wIVA_53Ch2GSg_sEAAYASAAEgIRm_D_BwE&gclsrc=aw.ds">
+      Flutter</a>
+    </div>
+  </div>
+  </section>
+  <section class="cards">
+           <div class="time">
+     <h3>Time</h3>
+     <h4>(Hours to seconds/minutes)</h4>
+     <input type="number" placeholder="hours" name="hour" id="hour" onchange="timeConvert(this.value)" oninput="timeConvert(this.value)">
+     <div class="timeunit">
+       <p class="minutes">
+        <span></span> minutes
+       </p>
+       <p class="seconds">
+        <span></span> seconds
+       </p>
+     </div>
+      <p>
+       &nbsp;
+      </p>
+      <hr style="width: 70px; font-weight: bolder;">
+    </div>
+         <!--Weight unit converter-->
+         <div class="weight">
+          <h3>Weight</h3>
+          <h4>(grams to kilograms/ounces)</h4>
+          <input type="number" placeholder="grams" name="grams" id="grams" onchange="weight(this.value)" oninput="weight(this.value)">
+          <div class="timeunit">
+           <p class="ounce">
+            <span></span> ounces 
+           </p>
+           <p class="kilogram">
+            <span></span> kilograms 
+           </p>
+          </div>
+          <p>
+           &nbsp;
+          </p>
+          <hr style="width: 70px; font-weight: bolder;">
+         </div>
+    
+    <!-- Circle Calculator -->
+    <div class="circlecard">
+     
+     <h3>Circle</h3>
+     <h4>Area and circumference </h4>
+     <p>
+      <input placeholder="radius" type="number" id="radius" name="radius" oninput="circle(this.value)" onchange="circle(this.value)">
+     </p>
+     <div class="values">
+     <p>Area <br>=>
+      <span class="area"></span>
+     </p>
+     <p>Circumference <br> => 
+      <span class="circumference"></span>
+     </p>
+      <p>Diameter <br>=> 
+      <span class="diameter"></span>
+     </p>
+     </div>
+      <p>
+       &nbsp;
+      </p>
+     <!--<hr style="width: 70px; font-weight: bolder;">-->
+    </div>
+    
+  <div class="temperature"> 
+
+    <h3>Temperature<br>(°C to °F)</h3>
+     <p>
+      <input type="text" name="celsius" id="celsius" placeholder="°C" oninput="celsius(this.value)" onchange="celsius(this.value)" value="">
+     </p>
+ 
+     <p><span id="fahrenheit"> </span>°F</p>
+       <p>
+       &nbsp;
+       </p>
+     <hr style="width: 70px; font-weight: bolder;">
+   </div>
+   
+    
+     
+  </section>
+
+    </div>
+    
+</main>
+
+<footer>
+ <h4></h4>
+</footer>
+
+<!--<script>
+//All variable declarations
+
+let outputF = document.getElementById('fahrenheit');
+let area = document.querySelector('.area');
+let circumference = document.querySelector('.circumference');
+let diameter = document.querySelector('.diameter');
+let pi = Math.PI;
+let minutes = document.querySelector('.minutes');
+let seconds = document.querySelector('.seconds');
+let ounces = document.querySelector('.ounce')
+let kg = document.querySelector('.kilogram')
+
+
+//Temperature conversion function
+
+function celsius(valnum) {
+ outputF.innerHTML = (valnum * 9 / 5) + 32;
+ console.log(outputF.innerText);
+};
+
+console.log(Math.PI)
+
+//Circle formulae function 
+let circle = radii => {
+ area.innerHTML = Math.round(pi * (radii ^ 2)) + ' cm²';
+ diameter.innerHTML = radii * 2 + ' cm';
+ circumference.innerHTML = Math.round(pi * 2 * radii) + ' cm';
+}
+
+
+//Time unit functions
+
+let timeConvert = hours => {
+ minutes.innerHTML = hours * 60 + ' mins';
+ seconds.innerHTML = hours * 3600 + ' seconds';
+}
+
+//Weight conversion
+
+let weight = weight => {
+ ounces.innerHTML = //Math.round
+  (weight * 28.35) + ' ounces';
+ kg.innerHTML = (weight / 1000) + 'kg';
+}
+
+
+
+//Sidenav toggle
+
+function closeNav() {
+ document.getElementById('sidenav').style.width = '0';
+ document.getElementById('sidenav').style.transition = 'width 0.3s'
+}
+
+function openNav() {
+ document.getElementById('sidenav').style.width = '100%';
+ document.getElementById('sidenav').style.transition = 'all 0.3s'
+}
+</script>-->
+<script src="convert.js">.js</script>
+</body>
+
+</html>
